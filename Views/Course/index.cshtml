@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Apply</h1>
+
+</div>
+
+<form method="Post" action="/Course/index">
+    <label class="">Email</label>
+    <input class="form-control my-2" name="Email"/>
+    <label>First Name</label>
+    <input class="form-control my-2" name="FirstName"/>
+    <label>Last Name</label>
+    <input class="form-control my-2" name="LastName"/>
+    <label>Age</label>
+    <select class="form-control my-2" name="Age">
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+    </select>
+    <fieldset>
+    <legend>Select One Course</legend>
+    <p>
+    <input type="radio" name="SelectedCourse" value="Asp.net MVC Core"/>
+    <label>Asp.net MVC Core</label>
+    </p>
+    <p>
+    <input type="radio" name="SelectedCourse" value="Asp.net Api"/>
+    <label>Asp.net Api</label>
+    </p>
+    <p>
+    <input type="radio" name="SelectedCourse" value="Blazor"/>
+    <label>Blazor</label>
+    </p>
+    <input class="form-control my-2 btn btn-primary" type="submit" />
+    </fieldset>
+</form>
